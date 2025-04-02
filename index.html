@@ -17,25 +17,1387 @@
         a:hover { text-decoration: underline; }
         img { max-width: 100%; height: auto; }
     </style></head>
-    <body><h1>PDA 내부 작업 모니터링 - 2025년 13주차</h1>
-<h3>📌 [알림] PDA 내부 작업 NaN 및 Overtime 결과 (총 1건 처리)</h3>
-<p>📅 실행 시간: 2025-03-30 23:30:05 (KST)</p>
-<h4>내부 작업 요약 테이블</h4>
-<table border="1" style="border-collapse: collapse; width: 80%;"><tr style="background-color: #f2f2f2;"><th>Order</th><th>모델명</th><th>가압 NaN</th><th>가압 OT</th><th>가동 NaN</th><th>가동 OT</th><th>마무리 NaN</th><th>마무리 OT</th></tr>
-<tr><td>250307/5351/5443</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+    <body><h1>PDA Dashboard - 2025년 14주차</h1>
+<h3>📌 [알림] PDA Overtime 및 NaN 체크 결과 (총 38건 처리)</h3>
+<p>📅 실행 시간: 2025-04-02 08:30:18 (KST)</p>
+<p>📊 대시보드에서 상세 내용 확인하세요! (<a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a>
+    <p><strong>📊 NOVA 트렌드 그래프</strong></p>
+    <ul>
+        <li>📅 주간 협력사 NaN 히트맵: <a href="https://drive.google.com/uc?export=view&id=1v988L1meEaAd69QuAb9nnR450s3OlLyd" target="_blank">그래프 보기</a></li>
+        <li>🗓️ 월간 협력사 NaN 히트맵: <a href="https://drive.google.com/uc?export=view&id=11XHLC0ZtGmUMxmf1HgY7AwDi-SvDC1UT" target="_blank">그래프 보기</a></li>
+        <li>📈 월간 모델별 NaN 히트맵: <a href="https://drive.google.com/uc?export=view&id=1E96anXE3H566CVWQT-zVB8ZD6xaoVG4w" target="_blank">그래프 보기</a></li>
+    </ul>
+    )</p>
+<h4>요약 테이블</h4>
+<table border="1" style="border-collapse: collapse; width: 80%;"><tr style="background-color: #f2f2f2;"><th>Order</th><th>모델명</th><th>기구협력사</th><th>전장협력사</th><th>총 작업 수</th><th>기구 NaN</th><th>기구 OT</th><th>전장 NaN</th><th>전장 OT</th><th>TMS_반제품 NaN</th><th>TMS_반제품 OT</th></tr>
+<tr><td>250214/5274/5373</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>37</td><td>0</td><td style="color: red; font-weight: bold;">6</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250312/5351/5456</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>39</td><td>0</td><td style="color: red; font-weight: bold;">6</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250305/5355/5428</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>41</td><td>0</td><td style="color: red; font-weight: bold;">6</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250305/5355/5429</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>41</td><td>0</td><td style="color: red; font-weight: bold;">6</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250311/5355/5448</td><td>GAIA-I DUAL</td><td>FNI</td><td>C&A</td><td>56</td><td style="color: red; font-weight: bold;">6</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250311/5355/5449</td><td>GAIA-I DUAL</td><td>FNI</td><td>C&A</td><td>53</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250306/5441/0515</td><td>GAIA-P</td><td>BAT</td><td>P&S</td><td>41</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5441/0529</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>46</td><td style="color: red; font-weight: bold;">7</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5441/0530</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>44</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5441/0531</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>47</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5441/0532</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>50</td><td style="color: red; font-weight: bold;">8</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5441/0533</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>46</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5465/0539</td><td>GAIA-P DUAL</td><td>FNI</td><td>TMS</td><td>41</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5465/0540</td><td>GAIA-P DUAL</td><td>FNI</td><td>TMS</td><td>43</td><td style="color: red; font-weight: bold;">5</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5465/0541</td><td>GAIA-P DUAL</td><td>FNI</td><td>TMS</td><td>42</td><td style="color: red; font-weight: bold;">2</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5498/5459</td><td>GAIA-I DUAL</td><td>FNI</td><td>TMS</td><td>44</td><td style="color: red; font-weight: bold;">6</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5498/5460</td><td>GAIA-I DUAL</td><td>FNI</td><td>TMS</td><td>42</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250319/5500/0546</td><td>GAIA-P DUAL</td><td>BAT</td><td>P&S</td><td>43</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">3</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250307/5504/0520</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>45</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250307/5504/0521</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>48</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250307/5504/0522</td><td>GAIA-P</td><td>FNI</td><td>C&A</td><td>46</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250311/5504/0524</td><td>GAIA-P</td><td>BAT</td><td>P&S</td><td>44</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250311/5504/0525</td><td>GAIA-P</td><td>BAT</td><td>P&S</td><td>43</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250313/5504/0534</td><td>GAIA-P</td><td>BAT</td><td>TMS</td><td>44</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td>0</td></tr>
+<tr><td>250313/5504/0535</td><td>GAIA-P</td><td>BAT</td><td>TMS</td><td>43</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td>0</td></tr>
+<tr><td>250317/5523/5461</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>47</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5523/5462</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>47</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5523/5463</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>45</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5523/5464</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>50</td><td>0</td><td style="color: red; font-weight: bold;">5</td><td style="color: red; font-weight: bold;">8</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5522/5465</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>45</td><td>0</td><td style="color: red; font-weight: bold;">4</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250317/5520/5466</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>46</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">3</td><td style="color: red; font-weight: bold;">2</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250319/5541/3618</td><td>DRAGON DUAL</td><td>BAT</td><td>P&S</td><td>38</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td>0</td><td>0</td></tr>
+<tr><td>250318/5545/5467</td><td>GAIA-I DUAL</td><td>FNI</td><td>C&A</td><td>53</td><td style="color: red; font-weight: bold;">5</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250318/5545/5468</td><td>GAIA-I DUAL</td><td>FNI</td><td>C&A</td><td>53</td><td style="color: red; font-weight: bold;">6</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">3</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250314/5558/0105</td><td>SWS-I</td><td>FNI</td><td>P&S</td><td>38</td><td style="color: red; font-weight: bold;">9</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
+<tr><td>250321/5560/5470</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>44</td><td>0</td><td style="color: red; font-weight: bold;">6</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">4</td></tr>
+<tr><td>250321/5560/5471</td><td>GAIA-I DUAL</td><td>BAT</td><td>P&S</td><td>44</td><td>0</td><td style="color: red; font-weight: bold;">5</td><td style="color: red; font-weight: bold;">4</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">3</td></tr>
+<tr><td>250320/5561/3619</td><td>DRAGON DUAL</td><td>FNI</td><td>P&S</td><td>39</td><td style="color: red; font-weight: bold;">5</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td>0</td><td>0</td></tr>
 </table><br>
-<details><summary><strong>📍 Order: 250307/5351/5443, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1d-B2FtmDeXj34cQxfZRO4qGjumfh6t4pAU2pFiCiTfs/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
+<h4>NaN 발생 비율 그래프</h4>
+<p>작업 수 대비 NaN 비율: <a href="https://drive.google.com/uc?export=view&id=1_D1trqZZjKTxQ37PErc0EmXNv-CQn9VZ">그래프 보기</a></p>
+<p>전체 NaN 건수 대비 비율: <a href="https://drive.google.com/uc?export=view&id=1yjhZ0sE27sXI6UrOQ5xgHW2EFVlTfo1t">그래프 보기</a></p>
+<br>
+<details><summary><strong>📍 Order: 250214/5274/5373, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/15tPxBynaCtksnbs67nLUndQY8DRaGI4T5oYfvAeWxJo/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 6 건 (비율: 35.29%)</span><br>
+   - LNG LINE ASSY 5h 8m<br>   - O2 LINE ASSY 5h 8m<br>   - CDA LINE ASSY 5h 39m<br>   - N2 LINE ASSY 5h 39m<br>   - PCW LINE ASSY 6h 55m<br>   - BCW LINE ASSY 6h 55m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 4h 28m<br>   - BURNER ASSY(TMS) 7h 1m<br>   - WET TANK ASSY(TMS) 8h 55m<br>   - REACTOR ASSY(TMS) 14h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 8 건<br>
  <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
  <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
 </p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250312/5351/5456, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1TsArbnu0MpIkCzZfou3LwIjoSH-B3KAe1Ui3xarznx8/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 6 건 (비율: 31.58%)</span><br>
+   - N2 LINE ASSY 6h 17m<br>   - CDA LINE ASSY 6h 17m<br>   - BCW LINE ASSY 6h 50m<br>   - PCW LINE ASSY 6h 50m<br>   - CDA TUBE ASSY 9h 4m<br>   - N2 TUBE ASSY 9h 4m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 9 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
  <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
  <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
 </p>
 <p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
  <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장 3h 30m<br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250305/5355/5428, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1MUoHOSF9wfwl8QQqaqg8jPN44xz-PzySQYUccLichWI/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 6 건 (비율: 28.57%)</span><br>
+   - LNG LINE ASSY 5h 50m<br>   - O2 LINE ASSY 5h 50m<br>   - N2 LINE ASSY 9h 9m<br>   - CDA LINE ASSY 9h 9m<br>   - PCW LINE ASSY 13h 1m<br>   - BCW LINE ASSY 13h 1m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - BURNER ASSY(TMS) 5h 40m<br>   - COOLING UNIT(TMS) 5h 43m<br>   - WET TANK ASSY(TMS) 11h 40m<br>   - REACTOR ASSY(TMS) 15h 41m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 8 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250305/5355/5429, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1HyAjdhlLGWat8rDCNO8e12BIH18pqLi-jz0apfMp_XI/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 6 건 (비율: 28.57%)</span><br>
+   - O2 LINE ASSY 5h 50m<br>   - LNG LINE ASSY 5h 50m<br>   - CDA LINE ASSY 9h 10m<br>   - N2 LINE ASSY 9h 10m<br>   - PCW LINE ASSY 13h 1m<br>   - BCW LINE ASSY 13h 1m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - BURNER ASSY(TMS) 5h 40m<br>   - COOLING UNIT(TMS) 5h 43m<br>   - WET TANK ASSY(TMS) 11h 40m<br>   - REACTOR ASSY(TMS) 15h 41m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 8 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장 7h 20m<br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250311/5355/5448, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1qaS9wi8alTKUq7iUaZz0gRa1K3Y-Mc1ksK2okS5HHng/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 6 건 (비율: 27.27%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - WASTE GAS LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 9.09%)</span><br>
+   - PCW LINE ASSY 13h 30m<br>   - BCW LINE ASSY 26h 46m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 18.18%)</span><br>
+   - 탱크 도킹 후 결선 작업 11h 57m<br>   - AC 백 판넬 작업 14h 58m<br>   - DC 백 판넬 작업 15h 26m<br>   - 내, 외부 작업 16h 40m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250311/5355/5449, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1j_QULUOj55ADFBFbUzjOuHo4aLrmc78RHSAK9hcAMb4/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 4 건 (비율: 21.05%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 10.53%)</span><br>
+   - PCW LINE ASSY 13h 49m<br>   - BCW LINE ASSY 26h 47m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 23 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 17.39%)</span><br>
+   - 탱크 도킹 후 결선 작업 11h 57m<br>   - DC 백 판넬 작업 15h 13m<br>   - AC 백 판넬 작업 15h 58m<br>   - 내, 외부 작업 17h 40m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장 3h 55m<br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250306/5441/0515, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1F8Hg5Lefw-Jsyv2vxB4xCwaQ411soTuMu8-Dkijt3rU/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 18 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.56%)</span><br>
+   - HEATING JACKET<br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 22.22%)</span><br>
+   - PCW LINE ASSY 8h 20m<br>   - BCW LINE ASSY 8h 20m<br>   - CDA LINE ASSY 9h 31m<br>   - N2 LINE ASSY 9h 31m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 11h 25m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 9 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5441/0529, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1YD0R7Elg2z7twUpCfoki7EStODwn8ZbIXHtr2RSvToU/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 7 건 (비율: 41.18%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - PCW LINE ASSY<br>   - WASTE GAS LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 16 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 12.50%)</span><br>
+   - 탱크 도킹 후 결선 작업 3h 38m<br>   - DC 백 판넬 작업 43h 32m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
+   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5441/0530, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/15wmRFPTqar4BHifazfYyky4cjqVHOCQMqkwje5fUeiQ/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 14 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 4 건 (비율: 28.57%)</span><br>
+   - CABINET ASSY<br>   - PCW LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 16 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 12.50%)</span><br>
+   - 탱크 도킹 후 결선 작업 3h 37m<br>   - DC 백 판넬 작업 12h 12m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 4 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5441/0531, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1jKtx47nwj2XHgbnYhP-c2_l9RxF-WSIsTbsbV7eKqpI/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 29.41%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.88%)</span><br>
+   - 탱크 작업<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 11.76%)</span><br>
+   - 탱크 도킹 후 결선 작업 3h 40m<br>   - DC 백 판넬 작업 14h 44m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG/Util<br>   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5441/0532, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1bMyaoS5gayc1gYKspjtUrGliJ3VF-mf1z9Lhg6eDo7Y/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 8 건 (비율: 36.36%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - CDA TUBE ASSY<br>   - WASTE GAS LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 15 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 13.33%)</span><br>
+   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 13.33%)</span><br>
+   - 판넬 취부 및 선분리 9h 13m<br>   - DC 백 판넬 작업 14h 25m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG/Util<br>   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5441/0533, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1aW1HMl9_Axfcr5yIQQdPX5MsrUpoin5HOrx0ylu_dJI/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 16 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 31.25%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 80.00%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 6h 30m<br>   - WET TANK ASSY(TMS) 8h 42m<br>   - REACTOR ASSY(TMS) 11h 54m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.88%)</span><br>
+   - 탱크 작업<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 11.76%)</span><br>
+   - 탱크 도킹 후 결선 작업 3h 40m<br>   - DC 백 판넬 작업 14h 12m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5465/0539, 모델명: GAIA-P DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1IyYJMKatziSWSRoJFRHpDPB8Tz8qczzsU9M8sjsV-xc/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 10.53%)</span><br>
+   - PCW LINE ASSY 7h 3m<br>   - BCW LINE ASSY 7h 35m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 8 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 25.00%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 5h 4m<br>   - 판넬 작업 19h 38m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5465/0540, 모델명: GAIA-P DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1sxom14ecZzA3qhYhJYb3nQ7lTDi2aVYjdeuDfNoxG6Q/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 29.41%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 11.76%)</span><br>
+   - PCW LINE ASSY 5h 39m<br>   - BCW LINE ASSY 7h 35m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 8 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 50.00%)</span><br>
+   - BURNER ASSY(TMS) 8h 30m<br>   - COOLING UNIT(TMS) 9h 28m<br>   - WET TANK ASSY(TMS) 11h 14m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 20.00%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 5h 3m<br>   - 판넬 작업 20h 10m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5465/0541, 모델명: GAIA-P DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1sHPwoLeosUQ8FL-8Oyi_Iw4vI709fWyalZlNw4uN2As/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 15 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 13.33%)</span><br>
+   - CABINET ASSY<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 13.33%)</span><br>
+   - PCW LINE ASSY 6h 30m<br>   - BCW LINE ASSY 19h 17m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 20.00%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 5h 2m<br>   - 판넬 작업 16h 45m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 33.33%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5498/5459, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1V9TG92vhrVGHTWAnjVKLJcDEHd9FYfce4X481VMw-zo/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 6 건 (비율: 28.57%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - WASTE GAS LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 9.52%)</span><br>
+   - PCW LINE ASSY 5h 37m<br>   - BCW LINE ASSY 11h 33m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 10.00%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 6h 4m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5498/5460, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1IAPS4uiFPbUkl9__yyJuBu22m10T__ORYe19xXPNprE/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 4 건 (비율: 21.05%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 15.79%)</span><br>
+   - BCW LINE ASSY 11h 33m<br>   - CDA LINE ASSY 56h 52m<br>   - N2 LINE ASSY 57h 45m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 9 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 33.33%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 6h 5m<br>   - 내, 외부 작업 7h 12m<br>   - 판넬 작업 9h 15m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250319/5500/0546, 모델명: GAIA-P DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1mcb9Ks_ZdInVYG16nqgCM_KsOk83HZFW6jl2VOv-Bc0/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 21.05%)</span><br>
+   - PCW LINE ASSY 6h 10m<br>   - BCW LINE ASSY 6h 10m<br>   - CDA LINE ASSY 6h 55m<br>   - N2 LINE ASSY 6h 55m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 3 건 (비율: 30.00%)</span><br>
+   - 내, 외부 작업<br>   - 판넬 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 20.00%)</span><br>
+   - 판넬 취부 및 선분리 8h 9m<br>   - 탱크 작업 23h 5m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250307/5504/0520, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1cRjXwQ7-UfQFt89WVkyXoYz5CgHgu63ofGDD9z0LmCo/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 29.41%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 11h 25m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 14 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 7.14%)</span><br>
+   - 탱크 작업<br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 21.43%)</span><br>
+   - 탱크 도킹 후 결선 작업 4h 49m<br>   - 내, 외부 작업 9h 44m<br>   - DC 백 판넬 작업 15h 11m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 3 건 (비율: 100.00%)</span><br>
+   - LNG/Util<br>   - Chamber<br>   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250307/5504/0521, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1pRtGSKSprixl61n8bsriwcQc2KWUirjsidVc0cnSSGE/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 29.41%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 11h 25m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.88%)</span><br>
+   - 탱크 작업<br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 23.53%)</span><br>
+   - 탱크 도킹 후 결선 작업 4h 47m<br>   - 판넬 취부 및 선분리 8h 2m<br>   - 내, 외부 작업 9h 45m<br>   - DC 백 판넬 작업 16h 3m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 3 건 (비율: 100.00%)</span><br>
+   - LNG/Util<br>   - Chamber<br>   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250307/5504/0522, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1C_7i_i2l0KH2h_Cx16yGvv9mAyTaqpsPERFKdDJVAGU/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 17 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 29.41%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 11h 25m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 15 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 6.67%)</span><br>
+   - 탱크 작업<br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 20.00%)</span><br>
+   - 탱크 도킹 후 결선 작업 4h 48m<br>   - 내, 외부 작업 9h 44m<br>   - DC 백 판넬 작업 14h 47m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 3 건 (비율: 100.00%)</span><br>
+   - LNG/Util<br>   - Chamber<br>   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250311/5504/0524, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1MoccVI8SyyDnujeD7xjTz2q6cm-z6eBQokV8OHiz4NA/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.26%)</span><br>
+   - HEATING JACKET<br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 21.05%)</span><br>
+   - 자주검사 5h 18m<br>   - PCW LINE ASSY 10h 42m<br>   - BCW LINE ASSY 10h 42m<br>   - N2 TUBE ASSY 10h 51m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 11h 25m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 9.09%)</span><br>
+   - 탱크 작업 5h 13m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250311/5504/0525, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1ohEyPnxWOLs1H9RZ1uMaUEdMmncOjAbcxWobQtsjVQM/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.26%)</span><br>
+   - HEATING JACKET<br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 15.79%)</span><br>
+   - BCW LINE ASSY 10h 46m<br>   - PCW LINE ASSY 10h 46m<br>   - N2 TUBE ASSY 10h 52m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 6h 15m<br>   - BURNER ASSY(TMS) 8h 11m<br>   - WET TANK ASSY(TMS) 9h 1m<br>   - REACTOR ASSY(TMS) 18h 4m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 10.00%)</span><br>
+   - 탱크 작업 4h 34m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5504/0534, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1cZP_oOn5cFk2q6LM-cMqdrm33EeCwzBH2xx9TN7qybQ/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 20 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.00%)</span><br>
+   - HEATING JACKET<br>
+ <span style="color: red;">⏳ 오버타임: 5 건 (비율: 25.00%)</span><br>
+   - 자주검사 6h 55m<br>   - N2 LINE ASSY 9h 2m<br>   - CDA LINE ASSY 9h 2m<br>   - BCW LINE ASSY 13h 0m<br>   - PCW LINE ASSY 13h 0m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 4 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 9.09%)</span><br>
+   - 내, 외부 작업 13h 59m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 4 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 50.00%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250313/5504/0535, 모델명: GAIA-P</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: TMS</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/10lNrwoqMKhXqr2LnjdvtK5wMaHQetPgehjUI8ObNV_8/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 20 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 5.00%)</span><br>
+   - HEATING JACKET<br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 20.00%)</span><br>
+   - N2 LINE ASSY 9h 1m<br>   - CDA LINE ASSY 9h 1m<br>   - PCW LINE ASSY 13h 12m<br>   - BCW LINE ASSY 13h 12m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 4 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 18.18%)</span><br>
+   - 판넬 작업 9h 45m<br>   - 내, 외부 작업 13h 56m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 66.67%)</span><br>
+   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5523/5461, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1rdTBdMRD4G1rjryWJkuwqbKESTXBxT8ETN_mPJsmp5k/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 18.18%)</span><br>
+   - N2 LINE ASSY 9h 57m<br>   - CDA LINE ASSY 9h 57m<br>   - PCW LINE ASSY 13h 32m<br>   - BCW LINE ASSY 13h 32m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 13 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 4 건 (비율: 30.77%)</span><br>
+   - AC 백 판넬 작업<br>   - DC 백 판넬 작업<br>   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 7.69%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 3h 48m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5523/5462, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1LkDfeU5HHVRKO6zAaGM5aS8rW2rp7EbF2in0gv8hoss/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 18.18%)</span><br>
+   - CDA LINE ASSY 9h 55m<br>   - N2 LINE ASSY 9h 55m<br>   - PCW LINE ASSY 13h 31m<br>   - BCW LINE ASSY 13h 31m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 13 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 15.38%)</span><br>
+   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 100.00%)</span><br>
+   - 검수 6h 47m<br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5523/5463, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/16IGL9wrst27BA_89ZLKXyP5ifqblT6Dr1KVA6g6APy0/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 22 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 18.18%)</span><br>
+   - N2 LINE ASSY 9h 54m<br>   - CDA LINE ASSY 9h 54m<br>   - PCW LINE ASSY 13h 30m<br>   - BCW LINE ASSY 13h 31m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 18.18%)</span><br>
+   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5523/5464, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/15y3HIF6nr5kzu4mEqopeosFSrpMeHxj4mYCJH3Ea3TM/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 24 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 5 건 (비율: 20.83%)</span><br>
+   - CDA LINE ASSY 9h 52m<br>   - N2 LINE ASSY 9h 52m<br>   - BCW LINE ASSY 13h 29m<br>   - PCW LINE ASSY 13h 29m<br>   - N2 TUBE ASSY 20h 46m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 14 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 8 건 (비율: 57.14%)</span><br>
+   - 판넬 취부 및 선분리<br>   - 판넬 취부 및 선분리<br>   - 판넬 취부 및 선분리<br>   - 판넬 취부 및 선분리<br>   - 판넬 취부 및 선분리<br>   - 탱크 작업<br>   - 판넬 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 14.29%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 3h 46m<br>   - 내, 외부 작업 11h 41m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5522/5465, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/16-CEW-qwNghJspxwZkOg9nIZ8mqpOLzOB3x_zoUSxN0/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 23 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 17.39%)</span><br>
+   - N2 LINE ASSY 9h 49m<br>   - CDA LINE ASSY 9h 49m<br>   - PCW LINE ASSY 13h 28m<br>   - BCW LINE ASSY 13h 28m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 10.00%)</span><br>
+   - 판넬 취부 및 선분리 7h 19m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250317/5520/5466, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/17HiRvPugWfjyGrnPSdIkGgUiPlzq8acuun2xR7EDfGU/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 4.76%)</span><br>
+   - O2 LINE ASSY<br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 14.29%)</span><br>
+   - N2 LINE ASSY 3h 39m<br>   - BCW LINE ASSY 13h 27m<br>   - PCW LINE ASSY 13h 27m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 13 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 15.38%)</span><br>
+   - AC 백 판넬 작업<br>   - DC 백 판넬 작업<br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 7.69%)</span><br>
+   - 내, 외부 작업 9h 36m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250319/5541/3618, 모델명: DRAGON DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/120lbrs3REG8ZypX_AV10YtkU51ksY9n1MgsPEJ85eWM/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 18 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 0 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 50.00%)</span><br>
+   - AC 백 판넬 작업<br>   - DC 백 판넬 작업<br>   - 탱크 작업<br>   - 판넬 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 5 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250318/5545/5467, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1BjTYEcETHGPvdvO-bobgQuuXnQM2qwDupBicetOCT14/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 18 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 27.78%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 11.11%)</span><br>
+   - BCW LINE ASSY 7h 37m<br>   - PCW LINE ASSY 10h 19m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 9 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 44.44%)</span><br>
+   - COOLING UNIT(TMS) 8h 43m<br>   - BURNER ASSY(TMS) 9h 33m<br>   - WET TANK ASSY(TMS) 11h 4m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 20 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 15.00%)</span><br>
+   - 내, 외부 작업 16h 40m<br>   - DC 백 판넬 작업 18h 37m<br>   - AC 백 판넬 작업 21h 39m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250318/5545/5468, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: C&A</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1QQ1BpqmK_3bSNJ4q4fl7bDtsibL-aXfgFJLxV14Xxrg/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 6 건 (비율: 28.57%)</span><br>
+   - CABINET ASSY<br>   - CDA LINE ASSY<br>   - CDA TUBE ASSY<br>   - WASTE GAS LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span style="color: red;">⏳ 오버타임: 2 건 (비율: 9.52%)</span><br>
+   - BCW LINE ASSY 7h 37m<br>   - PCW LINE ASSY 9h 58m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 8h 26m<br>   - BURNER ASSY(TMS) 8h 30m<br>   - WET TANK ASSY(TMS) 9h 40m<br>   - REACTOR ASSY(TMS) 14h 53m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 20 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 15.00%)</span><br>
+   - 내, 외부 작업 16h 20m<br>   - DC 백 판넬 작업 17h 26m<br>   - AC 백 판넬 작업 20h 57m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250314/5558/0105, 모델명: SWS-I</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1cUizmmcZlDhaimpWpDfi85Bgzwp37TfpwPg9uHDS1pc/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 19 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 9 건 (비율: 47.37%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA LINE ASSY<br>   - CDA TUBE ASSY<br>   - PCW LINE ASSY<br>   - LNG LINE ASSY<br>   - O2 LINE ASSY<br>   - HEATING JACKET<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 4 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 50.00%)</span><br>
+   - BURNER ASSY(TMS)<br>   - REACTOR ASSY(TMS)<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 9 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - LNG/Util<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250321/5560/5470, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1bsEZzaf8D1Sr3gOn1SfCaWGTm9ENDOCIhIsJH_h-63Q/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 6 건 (비율: 28.57%)</span><br>
+   - N2 LINE ASSY 4h 12m<br>   - CDA LINE ASSY 4h 12m<br>   - O2 LINE ASSY 6h 50m<br>   - LNG LINE ASSY 6h 50m<br>   - BCW LINE ASSY 8h 43m<br>   - PCW LINE ASSY 8h 43m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 4 건 (비율: 66.67%)</span><br>
+   - COOLING UNIT(TMS) 5h 16m<br>   - BURNER ASSY(TMS) 6h 46m<br>   - WET TANK ASSY(TMS) 11h 19m<br>   - REACTOR ASSY(TMS) 14h 10m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 9.09%)</span><br>
+   - 케비넷 준비 작업(덕트, 철거작업) 9h 51m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250321/5560/5471, 모델명: GAIA-I DUAL</strong></summary>
+<p>🏭 기구협력사: BAT, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1fQdJN_wGpe7rzd6_YRyeUjpzcE4hJQKyxYc88OgoqaQ/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 21 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 5 건 (비율: 23.81%)</span><br>
+   - CDA LINE ASSY 4h 12m<br>   - N2 LINE ASSY 4h 12m<br>   - LNG LINE ASSY 6h 50m<br>   - BCW LINE ASSY 8h 45m<br>   - PCW LINE ASSY 8h 45m<br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span style="color: red;">⏳ 오버타임: 3 건 (비율: 50.00%)</span><br>
+   - COOLING UNIT(TMS) 5h 16m<br>   - WET TANK ASSY(TMS) 11h 19m<br>   - REACTOR ASSY(TMS) 14h 10m<br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 11 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 4 건 (비율: 36.36%)</span><br>
+   - AC 백 판넬 작업<br>   - DC 백 판넬 작업<br>   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span style="color: red;">⏳ 오버타임: 1 건 (비율: 9.09%)</span><br>
+   - 내, 외부 작업 8h 34m<br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 1 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+</details><hr>
+<details><summary><strong>📍 Order: 250320/5561/3619, 모델명: DRAGON DUAL</strong></summary>
+<p>🏭 기구협력사: FNI, ⚡ 전장협력사: P&S</p>
+<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1xr1u3TL3tH90WMGaca3Se3Yz-qWyu6zfZ9WPgrEy0aY/edit">바로가기</a></p>
+<p>📊 대시보드 링크: <a href="https://rainbow-haupia-cd8290.netlify.app">대시보드 바로가기</a></p>
+<p>📊 그래프 링크:</p><ul><li>Working Hours: <a href="None">바로가기</a></li><li>Legend Chart: <a href="None">바로가기</a></li><li>WD Chart: <a href="None">바로가기</a></li></ul>
+<p><b>🔹 기구 작업</b><br> - 전체 작업 수: 18 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 5 건 (비율: 27.78%)</span><br>
+   - CABINET ASSY<br>   - N2 TUBE ASSY<br>   - CDA TUBE ASSY<br>   - CDA TUBE ASSY<br>   - CIR LINE TUBING<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 TMS_반제품 작업</b><br> - 전체 작업 수: 0 건<br>
+ <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 전장 작업</b><br> - 전체 작업 수: 10 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 20.00%)</span><br>
+   - 탱크 작업<br>   - 탱크 도킹 후 결선 작업<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 검사 작업</b><br> - 전체 작업 수: 3 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 33.33%)</span><br>
+   - I/O 체크, 가동 검사, 전장 마무리<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
+   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
+ <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
+</p>
+<p><b>🔹 기타 작업</b><br> - 전체 작업 수: 6 건<br>
+ <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 33.33%)</span><br>
+   - BURNER ASSY<br>   - WET SCRRUBING ASSY<br>
  <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
 </p>
 </details><hr></body></html>
