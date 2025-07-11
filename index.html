@@ -1,696 +1,160 @@
 
-    <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>PDA Internal Dashboard</title>
-      <style>
-        body { font-family: 'NanumGothic', sans-serif; font-size: 12px; margin: 20px; }
-        table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
-        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
-        th { background-color: #f2f2f2; }
-        details { margin-bottom: 10px; }
-        summary { cursor: pointer; font-weight: bold; color: #333; }
-        details[open] summary { color: #0056b3; }
-        details > *:not(summary) { display: block; margin-left: 20px; }
-        ul { margin: 5px 0; padding-left: 20px; }
-        p { margin: 5px 0; }
-        hr { margin: 20px 0; }
-        a { color: #0056b3; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        img { max-width: 100%; height: auto; }
-      </style>
-    </head>
-    <body><h1>PDA 내부 작업 모니터링 - 2025년 16주차</h1>
-<h3>📌 [알림] PDA 내부 작업 NaN 및 Overtime 결과 (총 38건 처리)</h3>
-<p>📅 실행 시간: 2025-04-15 10:01:18 (KST)</p>
-<h4>내부 작업 요약 테이블</h4>
-<table border="1" style="border-collapse: collapse; width: 80%;"><tr style="background-color: #f2f2f2;"><th>Order</th><th>모델명</th><th>가압 NaN</th><th>가압 OT</th><th>가동 NaN</th><th>가동 OT</th><th>마무리 NaN</th><th>마무리 OT</th></tr>
-<h4>NaN 발생 비율 그래프</h4>
-<p>작업 수 대비 NaN 비율: <a href="https://drive.google.com/uc?export=view&id=18afJm26K3IkRZgTiczSwDs5INvwYj6QX">그래프 보기</a></p><br>
-<tr><td>250401/5274/5500</td><td>GAIA-I DUAL</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250214/5351/5375</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250214/5351/5376</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250313/5441/0532</td><td>GAIA-P</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250313/5441/0533</td><td>GAIA-P</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250307/5491/0517</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250318/5491/0542</td><td>GAIA-P</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250318/5491/0543</td><td>GAIA-P</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250318/5491/0544</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250318/5491/0545</td><td>GAIA-P</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250321/5491/0547</td><td>GAIA-P</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250321/5491/0548</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250321/5491/0549</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250328/5491/0552</td><td>GAIA-P</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250328/5491/0553</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250328/5491/0554</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250307/5504/0520</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250307/5504/0521</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250307/5504/0522</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250325/5521/5482</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>250401/5519/5501</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250324/5524/5478</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-<tr><td>250401/5537/5502</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250401/5537/5503</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5539/5504</td><td>GAIA-I DUAL</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5546/5506</td><td>GAIA-I DUAL</td><td style="color: red; font-weight: bold;">2</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250327/5548/5495</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td style="color: red; font-weight: bold;">1</td></tr>
-<tr><td>250327/5548/5496</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250327/5548/5497</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250331/5549/5499</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5562/5507</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5576/5508</td><td>GAIA-I DUAL</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5576/5509</td><td>GAIA-I DUAL</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250402/5599/5516</td><td>GAIA-I DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250401/5603/3628</td><td>DRAGON DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250401/5603/3629</td><td>DRAGON DUAL</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">2</td><td>0</td></tr>
-<tr><td>250311/5504/0524</td><td>GAIA-P</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td><td>0</td></tr>
-<tr><td>250314/5558/0105</td><td>SWS-I</td><td style="color: red; font-weight: bold;">1</td><td>0</td><td>0</td><td>0</td><td>0</td><td style="color: red; font-weight: bold;">1</td></tr>
-</table><br>
-<details><summary><strong>📍 Order: 250401/5274/5500, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/13inSe05pAuuIr9s8wPvZjAw-ucPl6ClONQvx8QWV7BI/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250214/5351/5375, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1Ii6rJXZML8Y_-gajaTr25fpXf9A5UpjtUZO_9fJrsx0/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250214/5351/5376, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1_lbJygdoborKtRRYIgrFhapt7w3ARGLc4-zJZk7mwgU/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250313/5441/0532, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1bMyaoS5gayc1gYKspjtUrGliJ3VF-mf1z9Lhg6eDo7Y/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - LNG/Util<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250313/5441/0533, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1aW1HMl9_Axfcr5yIQQdPX5MsrUpoin5HOrx0ylu_dJI/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250307/5491/0517, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1P8mImTzbZPID7qRQbirA3HKbbQ_-J7VpIdKH4AZi2Zw/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250318/5491/0542, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1tYtk6NIde6YnPbAcQpBN7r4VaOugXVneRKWdfDampWs/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - LNG/Util<br>   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250318/5491/0543, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1r2EWC_7Au1NWCVjYKcPQUn5zSx6bUlPX_07Tb9NsRyM/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - LNG/Util<br>   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250318/5491/0544, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1Hkew9E2AIDW9UWmTenkRDqpQah9fNpVYOUagZTwsSLc/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250318/5491/0545, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/19mbQj-PqES51jsWikQ5ZayemYdfDc0GsNhMSmRBdzvA/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250321/5491/0547, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1oleHxnK5ai_rwwN77xMmlTYUijVa62mq9aOtRfRcofk/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250321/5491/0548, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1Laa_qfGSux8iKQTYbw6wQXp98vNzA6jZTDrwSmDl42Y/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250321/5491/0549, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1x15DS6IWemXiPcMhTLSKEPVx88OqbUOfZmEcjZCepDE/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span style="color: red;">⏳ 오버타임: 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리 4h 52m<br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250328/5491/0552, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1t0BRKwIH-2Aw8jb8RXQonY48xtkmgSrpCvb1DEKEvLY/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250328/5491/0553, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1BHQ4ryBHvZbw1vUKnRQEB0IOJE_ta3fcdCxSI3NjGhI/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250328/5491/0554, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1ngJDh8siKVxN369Dia8qzAvLiriY0qPI03t6l19ndNI/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250307/5504/0520, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1cRjXwQ7-UfQFt89WVkyXoYz5CgHgu63ofGDD9z0LmCo/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250307/5504/0521, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1pRtGSKSprixl61n8bsriwcQc2KWUirjsidVc0cnSSGE/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250307/5504/0522, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1C_7i_i2l0KH2h_Cx16yGvv9mAyTaqpsPERFKdDJVAGU/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250325/5521/5482, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1gfI673WhZGKIBqD2TD4u2pfSnv_fpmQL_91wgw3bEHg/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250401/5519/5501, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1WcP09nq27_9DOQN2nD5wG6Xo--FzBb8ak3Xr8cGJW5E/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250324/5524/5478, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/133ZUwNNCCpJHfd7HygoOFYHiKTowWv4547VQO-NwSGo/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250401/5537/5502, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1Y8YRu2d8bkd7i7FnglrqVZIjUyKqACULa9IePdWk_uE/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250401/5537/5503, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1YOQeiTtBSKZujlraOg0WV2OttLjfzsUVi4KIXYCd4pM/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5539/5504, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1ipDOsVhbG6rYQJgEUhjFEFZWRncvDhVWrBSYmBM2MVQ/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - LNG/Util<br>   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5546/5506, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/13ScKGl8mxW9_GhuHOk6thisQPG6p6CnjuKxM0Sf5WN8/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - LNG/Util<br>   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250327/5548/5495, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1h1b0qk-NvSoefk4xCyZ3-zdG41XLvTwWOkxvS8f50lA/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 상부 마무리<br>
- <span style="color: red;">⏳ 오버타임: 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장 3h 35m<br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250327/5548/5496, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1aZnPTriCAhowtpsPxP9g4ghd-tJPmqHjP1CGFmcWHyU/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250327/5548/5497, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1yvhC6UUG7mudDjGR1tuQS8-ER6xwQXnBAlxjU2UZjo8/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250331/5549/5499, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1w61D2cw-iBsvYDigaGIPDGmcKBu7HnKnGO3peUvT1rE/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5562/5507, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1N9xJBlpuOwVSqaiWf2vqeCpYzg44cGBlFSPOofa2ygQ/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5576/5508, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1k7JZ29XwUUhcN-Pxm7IaQCWwYV8Mn4OrlJ2RmNm8QlY/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5576/5509, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1LPSoOsXpfWv_RWcNr0m27C1eHwZdi5245quDVK9MVP8/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - Chamber<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 100.00%)</span><br>
-   - I/O 체크, 가동 검사, 전장 마무리<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250402/5599/5516, 모델명: GAIA-I DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1wxVw8_mKMP3I59bOsAmYVGxDT4vxsDE--kqA_8574qk/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250401/5603/3628, 모델명: DRAGON DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/17YWWrBGdV42UGTCdQenftuHc3T4PxgUGcQCh8qUv6RU/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250401/5603/3629, 모델명: DRAGON DUAL</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1vXebgirIxPA-rNJmq2bN3msiErJf24zWv0cYnEefqNk/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 2 건 (비율: 100.00%)</span><br>
-   - 상부 마무리<br>   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250311/5504/0524, 모델명: GAIA-P</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1MoccVI8SyyDnujeD7xjTz2q6cm-z6eBQokV8OHiz4NA/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-</details><hr>
-<details><summary><strong>📍 Order: 250314/5558/0105, 모델명: SWS-I</strong></summary>
-<p>📋 <strong>모델 스프레드시트</strong>: <a href="https://docs.google.com/spreadsheets/d/1cUizmmcZlDhaimpWpDfi85Bgzwp37TfpwPg9uHDS1pc/edit">바로가기</a></p>
-<p><b>🔹 가압 작업</b><br> - 전체 작업 수: 2 건<br>
- <span style="color: red;">⚠️ 누락(NaN): 1 건 (비율: 50.00%)</span><br>
-   - LNG/Util<br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 가동 작업</b><br> - 전체 작업 수: 1 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span>⏳ 오버타임: 0 건 (비율: 0.00%)</span><br>
-</p>
-<p><b>🔹 마무리 작업</b><br> - 전체 작업 수: 2 건<br>
- <span>⚠️ 누락(NaN): 0 건 (비율: 0.00%)</span><br>
- <span style="color: red;">⏳ 오버타임: 1 건 (비율: 50.00%)</span><br>
-   - 캐비넷 커버 장착 및 포장 7h 0m<br>
-</p>
-</details><hr></body></html>
-    
+            <!DOCTYPE html>
+            <html lang="ko">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>GST 불량 분석 대시보드</title>
+                <style>
+                    body {
+                        font-family: 'Arial', sans-serif;
+                        margin: 0;
+                        padding: 20px;
+                        background-color: #f5f5f5;
+                    }
+                    .header {
+                        text-align: center;
+                        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                        color: white;
+                        padding: 30px;
+                        border-radius: 10px;
+                        margin-bottom: 30px;
+                        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    }
+                    .header h1 {
+                        margin: 0;
+                        font-size: 2.5em;
+                        font-weight: 300;
+                    }
+                    .header p {
+                        margin: 10px 0 0 0;
+                        font-size: 1.2em;
+                        opacity: 0.9;
+                    }
+                    .chart-container {
+                        background: white;
+                        border-radius: 10px;
+                        padding: 20px;
+                        margin-bottom: 30px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    .chart-row {
+                        display: flex;
+                        gap: 20px;
+                        margin-bottom: 30px;
+                        align-items: stretch;
+                    }
+                    .chart-half {
+                        flex: 1;
+                        background: white;
+                        border-radius: 10px;
+                        padding: 20px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                        min-height: 500px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    .chart-half > div {
+                        flex: 1;
+                    }
+                    .summary-stats {
+                        display: grid;
+                        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                        gap: 20px;
+                        margin-bottom: 30px;
+                    }
+                    .stat-card {
+                        background: white;
+                        padding: 20px;
+                        border-radius: 10px;
+                        text-align: center;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    .stat-number {
+                        font-size: 2.5em;
+                        font-weight: bold;
+                        color: #667eea;
+                        margin: 0;
+                    }
+                    .stat-label {
+                        font-size: 1.1em;
+                        color: #666;
+                        margin: 5px 0 0 0;
+                    }
+                    .update-time {
+                        text-align: center;
+                        color: #666;
+                        margin-top: 30px;
+                        font-style: italic;
+                    }
+                </style>
+            </head>
+            <body>
+                <div class="header">
+                    <h1>GST 불량 분석 대시보드</h1>
+                    <p>2025년 가압검사 불량 현황 및 분석</p>
+                </div>
+                
+                <div class="summary-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">292</div>
+                        <div class="stat-label">총 불량 건수</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1,336</div>
+                        <div class="stat-label">총 검사 CH수</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">21.9%</div>
+                        <div class="stat-label">평균 불량률</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">주요 외주사</div>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+        <script charset="utf-8" src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>                <div id="monthly-chart" class="plotly-graph-div" style="height:500px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("monthly-chart")) {                    Plotly.newPlot(                        "monthly-chart",                        [{"marker":{"color":"rgba(255, 99, 132, 0.8)"},"name":"\ubd88\ub7c9 \uac74\uc218","text":["48","53","51","59","49","23","9"],"textposition":"auto","x":["1\uc6d4","2\uc6d4","3\uc6d4","4\uc6d4","5\uc6d4","6\uc6d4","7\uc6d4"],"y":[48,53,51,59,49,23,9],"type":"bar","xaxis":"x","yaxis":"y"},{"line":{"color":"rgba(54, 162, 235, 1)","width":3},"marker":{"size":8},"mode":"lines+markers","name":"CH\ub2f9 \ubd88\ub7c9\ub960 (%)","text":["31.8%","21.9%","22.8%","22.7%","24.0%","13.0%","11.5%"],"textposition":"top center","x":["1\uc6d4","2\uc6d4","3\uc6d4","4\uc6d4","5\uc6d4","6\uc6d4","7\uc6d4"],"y":[31.8,21.9,22.8,22.7,24.0,13.0,11.5],"type":"scatter","xaxis":"x","yaxis":"y2"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.0,0.94],"title":{"text":"\uc6d4"},"tickfont":{"size":12},"tickangle":0},"yaxis":{"anchor":"x","domain":[0.0,1.0],"title":{"text":"\ubd88\ub7c9 \uac74\uc218"}},"yaxis2":{"anchor":"x","overlaying":"y","side":"right","title":{"text":"CH\ub2f9 \ubd88\ub7c9\ub960 (%)"}},"annotations":[{"font":{"size":16},"showarrow":false,"text":"2025\ub144 \uac00\uc555\uac80\uc0ac \ubd88\ub7c9 \uc6d4\ubcc4 \ubd84\uc11d","x":0.47,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"title":{"font":{"size":20,"family":"Arial, sans-serif"},"text":"2025\ub144 \uac00\uc555\uac80\uc0ac \ubd88\ub7c9 \uc6d4\ubcc4 \ud2b8\ub80c\ub4dc","x":0.5,"xanchor":"center"},"legend":{"orientation":"h","yanchor":"bottom","y":1.02,"xanchor":"right","x":1},"height":500},                        {"responsive": true}                    )                };                            </script>        </div>
+</body>
+</html>
+                </div>
+                
+                <div class="chart-row">
+                    <div class="chart-half">
+                        <html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                            <div id="action-chart" class="plotly-graph-div" style="height:450px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("action-chart")) {                    Plotly.newPlot(                        "action-chart",                        [{"hole":0.4,"labels":["\uc7ac\uccb4\uacb0","\uc7ac\uccb4\uacb0(\ud074\ub7a8\ud504)","\uc7ac\uc791\uc5c5","\uc7ac\uc870\ub9bd","Teflon \uc791\uc5c5","\ud30c\ud2b8\uad50\uccb4"],"marker":{"colors":["#FF6B6B","#4ECDC4","#45B7D1","#96CEB4","#FFEAA7","#DDA0DD"]},"pull":[0.05,0,0,0,0,0.1],"showlegend":false,"textfont":{"size":10},"textinfo":"label+percent","textposition":"outside","values":[86,11,35,13,23,124],"type":"pie","domain":{"x":[0.0,0.33249999999999996],"y":[0.0,1.0]}},{"mode":"text","showlegend":false,"text":"\u25cf \uc7ac\uccb4\uacb0: 86\uac74 (29.5%)\u003cbr\u003e\u25cf \uc7ac\uccb4\uacb0(\ud074\ub7a8\ud504): 11\uac74 (3.8%)\u003cbr\u003e\u25cf \uc7ac\uc791\uc5c5: 35\uac74 (12.0%)\u003cbr\u003e\u25cf \uc7ac\uc870\ub9bd: 13\uac74 (4.5%)\u003cbr\u003e\u25cf Teflon \uc791\uc5c5: 23\uac74 (7.9%)\u003cbr\u003e\u25cf \ud30c\ud2b8\uad50\uccb4: 124\uac74 (42.5%)","textfont":{"family":"Arial","size":11},"textposition":"middle left","x":[0],"y":[0.5],"type":"scatter","xaxis":"x","yaxis":"y"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"xaxis":{"anchor":"y","domain":[0.38249999999999995,0.9999999999999999],"showgrid":false,"showticklabels":false,"zeroline":false,"visible":false},"yaxis":{"anchor":"x","domain":[0.0,1.0],"showgrid":false,"showticklabels":false,"zeroline":false,"visible":false},"annotations":[{"font":{"size":16},"showarrow":false,"text":"\ubd88\ub7c9\uc870\uce58 \uc720\ud615\ubcc4 \ubd84\ud3ec","x":0.16624999999999998,"xanchor":"center","xref":"paper","y":1.0,"yanchor":"bottom","yref":"paper"}],"margin":{"l":10,"r":10,"t":80,"b":50},"height":450},                        {"responsive": true}                    )                };                            </script>        </div>
+</body>
+</html>
+                    </div>
+                    <div class="chart-half">
+                        <html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                            <div id="supplier-chart" class="plotly-graph-div" style="height:450px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("supplier-chart")) {                    Plotly.newPlot(                        "supplier-chart",                        [{"marker":{"color":["#FF6B6B","#4ECDC4","#45B7D1"],"line":{"color":"rgba(0,0,0,0.3)","width":1}},"text":["79\uac74\u003cbr\u003e(48.2%)","58\uac74\u003cbr\u003e(35.4%)","26\uac74\u003cbr\u003e(15.9%)"],"textfont":{"color":"white","size":14},"textposition":"auto","x":["BAT","FNI","TMS"],"y":[79,58,26],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18,"family":"Arial, sans-serif"},"text":"\uae30\uad6c \uc678\uc8fc\uc0ac\ubcc4 \ubd88\ub7c9 \ud604\ud669","x":0.5,"xanchor":"center"},"xaxis":{"tickfont":{"size":12},"title":{"text":"\uc678\uc8fc\uc0ac","font":{"size":14}}},"yaxis":{"tickfont":{"size":12},"title":{"text":"\ubd88\ub7c9 \uac74\uc218","font":{"size":14}}},"margin":{"l":50,"r":50,"t":80,"b":50},"height":450},                        {"responsive": true}                    )                };                            </script>        </div>
+</body>
+</html>
+                    </div>
+                </div>
+                
+                <div class="chart-container">
+                    <html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                            <div id="category-chart" class="plotly-graph-div" style="height:400px; width:100%;"></div>            <script type="text/javascript">                                    window.PLOTLYENV=window.PLOTLYENV || {};                                    if (document.getElementById("category-chart")) {                    Plotly.newPlot(                        "category-chart",                        [{"marker":{"color":"rgba(255, 99, 132, 0.8)"},"text":[175.0,106.0,11.0],"textposition":"auto","x":["\uae30\uad6c\uc791\uc5c5\ubd88\ub7c9","\ubd80\ud488\ubd88\ub7c9","\uc804\uc7a5\uc791\uc5c5\ubd88\ub7c9"],"y":[175,106,11],"type":"bar"}],                        {"template":{"data":{"barpolar":[{"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"white","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"#C8D4E3","linecolor":"#C8D4E3","minorgridcolor":"#C8D4E3","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"contour"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmapgl"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"heatmap"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2dcontour"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"histogram2d"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"white","showlakes":true,"showland":true,"subunitcolor":"#C8D4E3"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"white","polar":{"angularaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""},"bgcolor":"white","radialaxis":{"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"yaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"},"zaxis":{"backgroundcolor":"white","gridcolor":"#DFE8F3","gridwidth":2,"linecolor":"#EBF0F8","showbackground":true,"ticks":"","zerolinecolor":"#EBF0F8"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"baxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""},"bgcolor":"white","caxis":{"gridcolor":"#DFE8F3","linecolor":"#A2B1C6","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"#EBF0F8","linecolor":"#EBF0F8","ticks":"","title":{"standoff":15},"zerolinecolor":"#EBF0F8","zerolinewidth":2}}},"title":{"font":{"size":18,"family":"Arial, sans-serif"},"text":"\ubd88\ub7c9 \ub300\ubd84\ub958\ubcc4 \ud604\ud669 (\uc0c1\uc704 10\uac1c)","x":0.5,"xanchor":"center"},"xaxis":{"title":{"text":"\ubd88\ub7c9 \ub300\ubd84\ub958"},"tickangle":45},"yaxis":{"title":{"text":"\ubd88\ub7c9 \uac74\uc218"}},"height":400},                        {"responsive": true}                    )                };                            </script>        </div>
+</body>
+</html>
+                </div>
+                
+                <div class="update-time">
+                    마지막 업데이트: 2025-07-11 11:35:24
+                </div>
+            </body>
+            </html>
+            
